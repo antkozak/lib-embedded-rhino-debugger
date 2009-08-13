@@ -260,11 +260,11 @@ public class Main {
      * created {@link Global} object.  No I/O redirection is performed
      * as with {@link #main(String[])}.
      */
-    public static void mainEmbedded(String title) {
+    public static Main mainEmbedded(String title) {
         ContextFactory factory = ContextFactory.getGlobal();
         Global global = new Global();
         global.init(factory);
-        mainEmbedded(factory, global, title);
+        return mainEmbedded(factory, global, title);
     }
 
     /**
@@ -272,10 +272,10 @@ public class Main {
      * to the given {@link ContextFactory} with the given scope.  No
      * I/O redirection is performed as with {@link #main(String[])}.
      */
-    public static void mainEmbedded(ContextFactory factory,
+    public static Main mainEmbedded(ContextFactory factory,
                                     Scriptable scope,
                                     String title) {
-        mainEmbeddedImpl(factory, scope, title);
+        return mainEmbeddedImpl(factory, scope, title);
     }
 
     /**
@@ -283,16 +283,16 @@ public class Main {
      * to the given {@link ContextFactory} with the given scope.  No
      * I/O redirection is performed as with {@link #main(String[])}.
      */
-    public static void mainEmbedded(ContextFactory factory,
+    public static Main mainEmbedded(ContextFactory factory,
                                     ScopeProvider scopeProvider,
                                     String title) {
-        mainEmbeddedImpl(factory, scopeProvider, title);
+        return mainEmbeddedImpl(factory, scopeProvider, title);
     }
 
     /**
      * Helper method for {@link #mainEmbedded(String)}, etc.
      */
-    private static void mainEmbeddedImpl(ContextFactory factory,
+    private static Main mainEmbeddedImpl(ContextFactory factory,
                                          Object scopeProvider,
                                          String title) {
         if (title == null) {
@@ -319,6 +319,8 @@ public class Main {
         main.pack();
         main.setSize(600, 460);
         main.setVisible(true);
+
+        return main;
     }
 
     // Deprecated methods
