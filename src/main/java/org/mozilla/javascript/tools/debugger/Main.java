@@ -260,7 +260,7 @@ public class Main {
      * created {@link Global} object.  No I/O redirection is performed
      * as with {@link #main(String[])}.
      */
-    public static Main mainEmbedded(String title) {
+    public static Dim mainEmbedded(String title) {
         ContextFactory factory = ContextFactory.getGlobal();
         Global global = new Global();
         global.init(factory);
@@ -272,7 +272,7 @@ public class Main {
      * to the given {@link ContextFactory} with the given scope.  No
      * I/O redirection is performed as with {@link #main(String[])}.
      */
-    public static Main mainEmbedded(ContextFactory factory,
+    public static Dim mainEmbedded(ContextFactory factory,
                                     Scriptable scope,
                                     String title) {
         return mainEmbeddedImpl(factory, scope, title);
@@ -283,7 +283,7 @@ public class Main {
      * to the given {@link ContextFactory} with the given scope.  No
      * I/O redirection is performed as with {@link #main(String[])}.
      */
-    public static Main mainEmbedded(ContextFactory factory,
+    public static Dim mainEmbedded(ContextFactory factory,
                                     ScopeProvider scopeProvider,
                                     String title) {
         return mainEmbeddedImpl(factory, scopeProvider, title);
@@ -292,7 +292,7 @@ public class Main {
     /**
      * Helper method for {@link #mainEmbedded(String)}, etc.
      */
-    private static Main mainEmbeddedImpl(ContextFactory factory,
+    private static Dim mainEmbeddedImpl(ContextFactory factory,
                                          Object scopeProvider,
                                          String title) {
         if (title == null) {
@@ -320,7 +320,7 @@ public class Main {
         main.setSize(600, 460);
         main.setVisible(true);
 
-        return main;
+        return main.dim;
     }
 
     // Deprecated methods
