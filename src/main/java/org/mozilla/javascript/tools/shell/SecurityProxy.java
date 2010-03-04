@@ -38,7 +38,9 @@
 
 package org.mozilla.javascript.tools.shell;
 
-import org.mozilla.javascript.*;
+import net.sourceforge.htmlunit.corejs.javascript.Context;
+import net.sourceforge.htmlunit.corejs.javascript.Scriptable;
+import net.sourceforge.htmlunit.corejs.javascript.SecurityController;
 
 public abstract class SecurityProxy extends SecurityController
 {

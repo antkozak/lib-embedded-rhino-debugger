@@ -45,9 +45,9 @@
 
 package org.mozilla.javascript.tools.shell;
 
-import org.mozilla.javascript.Scriptable;
-import org.mozilla.javascript.ScriptRuntime;
-import org.mozilla.javascript.ScriptableObject;
+import net.sourceforge.htmlunit.corejs.javascript.ScriptRuntime;
+import net.sourceforge.htmlunit.corejs.javascript.Scriptable;
+import net.sourceforge.htmlunit.corejs.javascript.ScriptableObject;
 
 import java.util.Map;
 

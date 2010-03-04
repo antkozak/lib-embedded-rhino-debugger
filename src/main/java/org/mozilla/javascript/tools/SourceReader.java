@@ -8,7 +8,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
-import org.mozilla.javascript.Kit;
+import net.sourceforge.htmlunit.corejs.javascript.Kit;
 import org.mozilla.javascript.tools.shell.ParsedContentType;
 
 /**

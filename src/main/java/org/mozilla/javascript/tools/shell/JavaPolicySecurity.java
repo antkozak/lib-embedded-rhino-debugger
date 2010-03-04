@@ -38,12 +38,15 @@
 
 package org.mozilla.javascript.tools.shell;
 
+import net.sourceforge.htmlunit.corejs.javascript.Callable;
+import net.sourceforge.htmlunit.corejs.javascript.Context;
+import net.sourceforge.htmlunit.corejs.javascript.GeneratedClassLoader;
+import net.sourceforge.htmlunit.corejs.javascript.Scriptable;
+
 import java.security.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Enumeration;
-
-import org.mozilla.javascript.*;
 
 public class JavaPolicySecurity extends SecurityProxy
 {

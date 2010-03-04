@@ -39,7 +39,9 @@
 
 package org.mozilla.javascript.tools.shell;
 
-import org.mozilla.javascript.*;
+import net.sourceforge.htmlunit.corejs.javascript.Context;
+import net.sourceforge.htmlunit.corejs.javascript.ContextFactory;
+import net.sourceforge.htmlunit.corejs.javascript.ErrorReporter;
 
 public class ShellContextFactory extends ContextFactory
 {

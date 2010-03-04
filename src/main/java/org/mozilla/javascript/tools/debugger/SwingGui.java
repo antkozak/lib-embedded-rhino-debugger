@@ -83,9 +83,8 @@ import javax.swing.tree.DefaultTreeCellRenderer;
 import javax.swing.tree.TreePath;
 import java.lang.reflect.Method;
 
-import org.mozilla.javascript.Kit;
-import org.mozilla.javascript.SecurityUtilities;
-
+import net.sourceforge.htmlunit.corejs.javascript.Kit;
+import net.sourceforge.htmlunit.corejs.javascript.SecurityUtilities;
 import org.mozilla.javascript.tools.shell.ConsoleTextArea;
 
 import org.mozilla.javascript.tools.debugger.treetable.JTreeTable;

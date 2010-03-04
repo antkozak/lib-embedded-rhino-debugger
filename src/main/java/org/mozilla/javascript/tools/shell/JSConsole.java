@@ -36,6 +36,8 @@
  *
  * ***** END LICENSE BLOCK ***** */
 package org.mozilla.javascript.tools.shell;
+import net.sourceforge.htmlunit.corejs.javascript.SecurityUtilities;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
@@ -53,8 +55,6 @@ import javax.swing.JRadioButtonMenuItem;
 import javax.swing.JScrollPane;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
-
-import org.mozilla.javascript.SecurityUtilities;
 
 public class JSConsole extends JFrame implements ActionListener
 {

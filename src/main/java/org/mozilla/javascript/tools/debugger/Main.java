@@ -46,6 +46,10 @@ import java.io.PrintStream;
 
 import javax.swing.JFrame;
 
+import net.sourceforge.htmlunit.corejs.javascript.Context;
+import net.sourceforge.htmlunit.corejs.javascript.ContextFactory;
+import net.sourceforge.htmlunit.corejs.javascript.Kit;
+import net.sourceforge.htmlunit.corejs.javascript.Scriptable;
 import org.mozilla.javascript.*;
 import org.mozilla.javascript.tools.shell.Global;
 

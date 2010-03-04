@@ -38,7 +38,7 @@
 
 package org.mozilla.javascript.tools.shell;
 
-import org.mozilla.javascript.Context;
+import net.sourceforge.htmlunit.corejs.javascript.Context;
 
 /**
  * Defines action to perform in response to quit command.

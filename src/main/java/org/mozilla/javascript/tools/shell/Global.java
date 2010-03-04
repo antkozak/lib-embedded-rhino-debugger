@@ -50,9 +50,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
-import org.mozilla.javascript.*;
+
+import net.sourceforge.htmlunit.corejs.javascript.*;
 import org.mozilla.javascript.tools.ToolErrorReporter;
-import org.mozilla.javascript.serialize.*;
+import net.sourceforge.htmlunit.corejs.javascript.serialize.*;
 
 /**
  * This class provides for sharing functions across multiple threads.

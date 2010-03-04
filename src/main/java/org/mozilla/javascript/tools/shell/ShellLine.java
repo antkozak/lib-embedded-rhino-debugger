@@ -39,17 +39,17 @@
 
 package org.mozilla.javascript.tools.shell;
 
+import net.sourceforge.htmlunit.corejs.javascript.Function;
+import net.sourceforge.htmlunit.corejs.javascript.Kit;
+import net.sourceforge.htmlunit.corejs.javascript.Scriptable;
+import net.sourceforge.htmlunit.corejs.javascript.ScriptableObject;
+
 import java.io.InputStream;
 import java.util.List;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.lang.reflect.InvocationTargetException;
-
-import org.mozilla.javascript.Kit;
-import org.mozilla.javascript.Scriptable;
-import org.mozilla.javascript.ScriptableObject;
-import org.mozilla.javascript.Function;
 
 /**
  * Provides a specialized input stream for consoles to handle line
@@ -159,7 +159,7 @@ class FlexibleCompletor implements java.lang.reflect.InvocationHandler {
                 return buffer.length(); // no matches
             }
         }
-        Object[] ids = (obj instanceof ScriptableObject) 
+        Object[] ids = (obj instanceof ScriptableObject)
                        ? ((ScriptableObject)obj).getAllIds()
                        : obj.getIds();
         String lastPart = names[names.length-1];

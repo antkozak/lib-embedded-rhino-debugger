@@ -38,7 +38,7 @@
  * ***** END LICENSE BLOCK ***** */
 package org.mozilla.javascript.tools.debugger;
 
-import org.mozilla.javascript.Scriptable;
+import net.sourceforge.htmlunit.corejs.javascript.Scriptable;
 
 /**
  * Interface to provide a scope object for script evaluation to the debugger.

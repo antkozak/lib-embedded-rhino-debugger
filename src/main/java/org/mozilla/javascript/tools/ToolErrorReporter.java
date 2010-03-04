@@ -39,6 +39,14 @@
 
 package org.mozilla.javascript.tools;
 
+import net.sourceforge.htmlunit.corejs.javascript.Context;
+import net.sourceforge.htmlunit.corejs.javascript.EcmaError;
+import net.sourceforge.htmlunit.corejs.javascript.ErrorReporter;
+import net.sourceforge.htmlunit.corejs.javascript.EvaluatorException;
+import net.sourceforge.htmlunit.corejs.javascript.JavaScriptException;
+import net.sourceforge.htmlunit.corejs.javascript.RhinoException;
+import net.sourceforge.htmlunit.corejs.javascript.SecurityUtilities;
+import net.sourceforge.htmlunit.corejs.javascript.WrappedException;
 import org.mozilla.javascript.*;
 
 import java.text.MessageFormat;

@@ -40,8 +40,24 @@
  * ***** END LICENSE BLOCK ***** */
 package org.mozilla.javascript.tools.debugger;
 
+import net.sourceforge.htmlunit.corejs.javascript.Callable;
+import net.sourceforge.htmlunit.corejs.javascript.Context;
+import net.sourceforge.htmlunit.corejs.javascript.ContextAction;
+import net.sourceforge.htmlunit.corejs.javascript.ContextFactory;
+import net.sourceforge.htmlunit.corejs.javascript.ImporterTopLevel;
+import net.sourceforge.htmlunit.corejs.javascript.Kit;
+import net.sourceforge.htmlunit.corejs.javascript.NativeCall;
+import net.sourceforge.htmlunit.corejs.javascript.ObjArray;
+import net.sourceforge.htmlunit.corejs.javascript.ScriptRuntime;
+import net.sourceforge.htmlunit.corejs.javascript.Scriptable;
+import net.sourceforge.htmlunit.corejs.javascript.ScriptableObject;
+import net.sourceforge.htmlunit.corejs.javascript.SecurityUtilities;
+import net.sourceforge.htmlunit.corejs.javascript.Undefined;
+import net.sourceforge.htmlunit.corejs.javascript.debug.DebugFrame;
+import net.sourceforge.htmlunit.corejs.javascript.debug.DebuggableObject;
+import net.sourceforge.htmlunit.corejs.javascript.debug.DebuggableScript;
+import net.sourceforge.htmlunit.corejs.javascript.debug.Debugger;
 import org.mozilla.javascript.*;
-import org.mozilla.javascript.debug.*;
 import java.util.*;
 import java.io.*;
 import java.net.URL;
