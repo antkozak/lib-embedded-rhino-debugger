@@ -6,11 +6,11 @@
     <groupId>org.jvnet.hudson</groupId>
     <version>1.7</version>
   </parent>
-  <groupId>org.jvnet.hudson</groupId>
   <artifactId>embedded-rhino-debugger</artifactId>
   <version>1.2-SNAPSHOT</version>
   <name>embedded-rhino-debugger</name>
   <description>Swing-based Rhino debugger that's embeddable.</description>
+  
   <dependencies>
     <dependency>
       <groupId>org.jvnet.hudson</groupId>
